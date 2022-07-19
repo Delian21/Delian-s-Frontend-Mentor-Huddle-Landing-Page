@@ -1,0 +1,589 @@
+:root {
+    --pink-color: #F00098;
+    --very-pale-cyan: #EBFBFF;
+    --very-dark-cyan: #00252E;
+    --grayish-blue: #808D99;
+    --pink-hover-color: #e48ac3;
+    --white-hover-color: #fdfdfd;
+    --headings-font: 'Poppins', sans-serif;
+    --body-call-to-actions-font: 'Open Sans', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+/* End of desktop navigation */
+
+header {
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 30px;
+}
+
+.hero-container .left {
+    margin-left: 5%;
+}
+
+.hero-container .right img {
+    height: 600px;
+    margin: 0 8%;
+}
+
+.hero-container .left p {
+    margin-bottom: 10%;
+}
+
+.logo img {
+    width: 70%;
+    margin-left: 33%;
+}
+
+/* End of hero section */
+
+.btn {
+    border-radius: 45px;
+    text-decoration: none;
+    box-shadow: 0px 1px 8px -1px #ccc;
+    font-weight: bold;
+}
+
+.btn.white {
+    background: #fff;
+    color: var(--very-dark-cyan);
+    padding: 12px 60px;
+    margin-left: -41%;
+}
+
+.btn.white:hover {
+    background-color: var(--white-hover-color);
+    box-shadow: 0 2px #a8afb6;
+    color: #7e7a7a;
+}
+
+.btn.pink {
+    background: var(--pink-color);
+    color: var(--very-pale-cyan);
+    padding: 26px 80px;
+    margin: 0;
+}
+
+.btn.pink:hover {
+    background-color: var(--pink-hover-color);
+    box-shadow: 0 2px var(--grayish-blue);
+}
+
+.btn.pink-bottom:hover {
+    background-color: var(--pink-hover-color);
+    box-shadow: 0 2px var(--grayish-blue);
+}
+
+.btn.pink-bottom {
+    background: var(--pink-color);
+    color: var(--very-pale-cyan);
+    padding: 26px 80px;
+    margin: 0% 21%;
+}
+
+/* button end */
+
+.desktop-nav .menu-item {
+    list-style: none;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 100%;
+    /* the width seems a bit awry when switch between max and min width alongside the pixels.
+    Percentage gets affected too.  */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    background: url(images/bg-hero-desktop.svg);
+    background-color: var(--very-pale-cyan);
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.container .gt {
+    display: flex;
+    width: 97%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(145, 143, 143, 0.356);
+    margin-top: 15%;
+    background: #fff;
+}
+
+.container .gt .left {
+    margin: 5% 0;
+    font-size: 17px;
+    padding: 6px 70px;
+}
+
+.container .gt .left h2 {
+    font-size: 32px;
+}
+
+
+.container .gt .right img {
+    width: 62%;
+    margin-left: 39.5%;
+    padding: 4% 3% 5% 0;
+}
+
+/* Grow together end */
+
+.container .fc {
+    display: flex;
+    width: 97%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(145, 143, 143, 0.356);
+    margin-top: 4%;
+    background: #fff;
+}
+
+.container .fc .left img {
+    width: 60%;
+    margin-right: 39.5%;
+    padding: 5%;
+}
+
+.container .fc .right {
+    margin: 4% 4%;
+    font-size: 17px;
+    padding: 30px 4px;
+}
+
+.container .fc .right h2 {
+    font-size: 32px;
+}
+
+h1,
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* Flowing conversations end */
+
+.container .yu {
+    display: flex;
+    width: 97%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(145, 143, 143, 0.356);
+    margin-top: 4%;
+    background: #fff;
+}
+
+.container .yu .right {
+    width: 20%;
+}
+
+.container .yu .right img {
+    width: 370px;
+    margin-left: 380px;
+    padding-top: 10%;
+    padding-bottom: 13%;
+}
+
+.container .yu .left {
+    margin: 0;
+    font-size: 17px;
+    padding: 0 70px;
+}
+
+.container .yu .left h2 {
+    font-size: 32px;
+    margin-top: 18%;
+}
+
+/* Your users end */
+
+.get-started {
+    margin: 0 25%;
+    padding: 1px 72px 69px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px hsla(192, 100%, 9%, 0.164);
+    top: 100px;
+    position: relative;
+    background-color: #fff;
+}
+
+.get-started h2 {
+    text-align: center;
+    margin-top: 10%;
+    padding-bottom: 10%;
+    font-size: 28px;
+
+}
+
+/* bottom section */
+
+.bottom-section {
+    width: 100%;
+    padding-top: 190px;
+    padding-left: 50px;
+    background: var(--very-dark-cyan);
+    color: var(--very-pale-cyan);
+}
+
+.contact-list .bottom-logo {
+    margin-left: 2.8%;
+}
+
+.contact-list .bottom-logo img {
+    width: 12%;
+}
+
+.contact-list li p {
+    margin-left: 3%;
+    margin-bottom: 0.2%;
+    position: relative;
+    top: -44px;
+}
+
+.contact-list li {
+    list-style: none;
+
+}
+
+.contact-list li a {
+    margin-left: 1.2%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.socials {
+    margin: 0 293px;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    bottom: 235px;
+}
+
+
+.socials img {
+    width: 3.7%;
+    margin: 0 0.7%;
+}
+
+.socials img:hover {
+    background-color: var(--pink-hover-color);
+    border-radius: 20px;
+}
+
+.links-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 38%;
+}
+
+.links-container .links {
+    margin-top: -79%;
+}
+
+.links-container .links2 {
+    margin-top: -40%;
+    margin-left: -9%;
+}
+
+.links-container .links li {
+    list-style: none;
+    margin: 5% 0;
+}
+
+.links-container .links2 li {
+    list-style: none;
+    margin: 2% auto;
+
+}
+
+.links-container .links li a {
+    text-decoration: none;
+    color: var(--very-pale-cyan);
+}
+
+.links-container .links2 li a {
+    text-decoration: none;
+    color: var(--very-pale-cyan);
+}
+
+.rights p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    margin-right: 7.4%;
+}
+
+footer .attribution {
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: var(--grayish-blue);
+}
+
+/* mobile version */
+
+@media(max-width: 375px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .wrapper {
+        padding-left: 32px;
+    }
+
+    .logo img {
+        width: 60%;
+        margin-top: 11%;
+        margin-left: -7%;
+    }
+
+    .btn {
+        font-size: 11px;
+    }
+
+    .btn.white {
+        padding: 9px 30px;
+    }
+
+    .btn.pink {
+        padding: 13px 55px;
+        margin-left: 10%;
+    }
+
+    .container .gt .left {
+        margin: 5% 0;
+        font-size: 14px;
+        padding: 6px 70px;
+    }
+
+    .container .gt .left h2 {
+        font-size: 20px;
+        margin-top: 300px;
+        text-align: center;
+    }
+
+    .container .gt .left p {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .container .gt {
+        display: block ruby;
+        width: 97%;
+        margin: 0 auto;
+        margin-top: 0px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px rgba(145, 143, 143, 0.356);
+        margin-top: 5%;
+        background: #fff;
+    }
+
+    .container .gt .right img {
+        width: 100%;
+        margin-left: -100%;
+        margin-top: -100%;
+        position: relative;
+        bottom: 206px;
+    }
+
+    .container .fc {
+        display: block ruby;
+        width: 97%;
+        margin: 0 auto;
+        margin-top: 0px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px rgba(145, 143, 143, 0.356);
+        margin-top: 5%;
+        background: #fff;
+    }
+
+    .container .fc .left img {
+        width: 100%;
+        position: relative;
+        bottom: 92px;
+    }
+
+    .container .fc .right {
+        margin: 40% 0;
+        font-size: 14px;
+        padding: 6px 70px;
+        position: relative;
+        top: 120px;
+        right: 330px;
+        text-align: center;
+    }
+
+    .container .fc .right h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container .yu .right img {
+       width: 308px;
+       position: relative;
+       right: 630px;
+       top: 20px;
+    }
+
+
+    .container .yu .left {
+        margin: 45% -6%;
+        font-size: 14px;
+        padding: 6px 70px;
+        text-align: center;
+        position: relative;
+        top: 138px;
+        left: 32px;
+    }
+
+    .container .yu .left h2{
+       font-size: 22px;
+    }
+
+    .container .yu .left p{
+       margin-bottom: 20px;
+    }
+
+    .get-started{
+        margin: 40px 20px;
+        padding: 20px;
+    }
+
+    .get-started h2{
+        font-size: 17px;
+    }
+
+    .btn.pink-bottom{
+        padding: 10px 34px;
+        position: relative;
+        bottom: 25px;
+        right: 5px;
+    }
+
+    .hero-container .left h1 {
+        font-size: 24px;
+        text-align: center;
+        width: 272px;
+        margin-top: 27%;
+    }
+
+    .hero-container .left p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .hero-container .right img {
+        position: relative;
+        bottom: -57%;
+        height: 29%;
+        right: 35%;
+    }
+
+    .contact-list .bottom-logo img{
+        width: 40%;
+        margin-left: -15%;
+    }
+
+    .contact-list li p{
+        margin-left: -42px;
+        margin-top: 17px;
+        font-size: 15px;
+    }
+
+    .contact-list li a{
+        margin-left: -64px;
+        position: relative;
+        bottom: 2px;
+        font-size: 15px;
+    }
+
+    .contact-list li img{
+        position: relative;
+        right: 75px;
+    }
+
+    .links-container .links li{
+        margin: 13px 0;
+        
+    }
+ 
+    .links-container .links li a{
+        margin: 0 -198px;
+        font-size: 14px;
+        position: relative;
+        top: 40px;
+    }
+
+    .links-container .links2 li{
+        margin: 13px 0;
+        font-size: 14px;
+    }
+
+    .links-container .links2 a{
+        position: relative;
+        top: 150px;
+        right: 253px;
+    }
+
+    .socials{
+        margin: 0 83px;
+        width: 110px;
+        position: relative;
+        top: 210px;
+    }
+
+    .socials img{
+        width: 60%;
+    }
+
+    #face-icon{
+        margin-right: 10px;
+    }
+
+    #insta-icon{
+        margin-left: 10px;
+    }
+
+    .rights p{
+        font-size: 13px;
+        margin-bottom: 240px;
+        position: relative;
+        right: 22px;
+        top: 230px;
+    }
+
+    footer .attribution{
+        font-size: 13px;
+        position: relative;
+        right: 22px;
+    }
+}
